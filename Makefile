@@ -5,6 +5,7 @@ usage:
 	@echo "* jakeg -> jake.gorit.ski"
 	@echo "* blog -> jakeg.dev"
 	@echo "* static -> static.skinet.org"
+	@echo "* dizbiz -> dizzy.biz"
 	
 .PHONY: goritski
 goritski:
@@ -27,6 +28,3 @@ static:
 dizbiz:
 	rsync -azvh --delete dizzy.biz/ perfect-blue:/var/www/html/dizzy.biz
 
-
-.PHONY: all
-all: goritski jakeg blog
