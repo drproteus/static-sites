@@ -33,3 +33,12 @@ dizbiz:
 sdf:
 	rsync -azvh --delete sdf/ sdf:~/html
 
+.PHONY: caddy
+caddy: push-caddy
+	scp caddy/Caddyfile perfect-blue:/etc/caddy/Caddyfile
+	ssh -t perfect-blue 'cd /etc/caddy; sudo caddy reload'
+
+.PHONY: pull-caddy
+pull-caddy:
+	scp perfect-blue:/etc/caddy/Caddyfile caddy/Caddyfile
+
