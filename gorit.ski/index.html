@@ -1,0 +1,79 @@
+<html>
+<style>
+:root {
+  color-scheme: light dark;
+}
+@font-face {
+  font-family: "Gothic Pixel";
+  src: url("./assets/fonts/gothic-pixel-font.ttf");
+}
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("./assets/fonts/AnonymousPro-Regular.ttf");
+}
+#header {
+  text-align: center;
+}
+#header h1 {
+  font-family: "Gothic Pixel";
+  font-size: 96px;
+}
+#about {
+  font-family: "Anonymous Pro";
+  width: 400px;
+  margin: auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
+#players {
+  width: 400px;
+  margin: auto;
+  font-family: "Anonymous Pro";
+}
+#players h2 {
+  font-family: "Gothic Pixel";
+}
+.player-image {
+  width: 64px;
+  height: auto;
+  border-radius: 50%;
+  position: relative;
+  top: 25;
+}
+#players ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: -25px;
+}
+#players a {
+  color: inherit;
+}
+</style>
+<body>
+  <div id="header">
+  <img src="./assets/images/coatofarms.png"/>
+  <h1>Goritski</h1>
+  </div>
+  <div id="about">
+    <p>Hark, weary vagabond of the world wide web.</p>
+  </div>
+  <div id="players">
+    <h2>The Players</h2>
+    <ul>
+      <li>
+        <img class="player-image" src="https://static.skinet.org/images/spider-man.png"/>
+        <a href="https://jake.gorit.ski">Jake</a>
+      </li>
+      <li>
+        <img class="player-image" src="https://static.skinet.org/images/diz-biz.png"/>
+        <a href="#">Dizzy</a>
+      </li>
+      <li>
+        <img class="player-image" src="https://static.skinet.org/images/wolverine.jpg"/>
+        <a href="#">Earthman</a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
