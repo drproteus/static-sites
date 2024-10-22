@@ -1,0 +1,3 @@
+[submodule "jakeg.dev"]
+	path = jakeg.dev
+	url = git@github.com:drproteus/jakeg.dev
