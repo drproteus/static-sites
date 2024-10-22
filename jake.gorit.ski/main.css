@@ -31,7 +31,6 @@ a:visited {
 }
 ul {
 	list-style: none;
-    float: left;
     margin: 0;
     padding: 0;
 }
@@ -43,6 +42,12 @@ ul {
 	padding-right: 10px;
 }
 .card {
+    margin: auto;
 	margin-top: 50px;
 	font-size: 2em;
+    width: 400px;
+}
+#sideb {
+    clear: both;
+    padding-top: 20px;
 }
