@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   matrixReloaded();
   window.addEventListener("resize", (event) => {
-    console.log("asldkjaskldjaslkdjl");
     var c = document.getElementById("c");
     var ctx = c.getContext("2d");
     //making the canvas full screen
