@@ -13,4 +13,9 @@ make jakeg
 # make it so
 ```
 
+* https://gorit.ski
+* https://jake.gorit.ski
+* https://jakeg.dev
+* https://static.skinet.org/diz
+
 ![foobar](/static/images/dizposter.jpg)
