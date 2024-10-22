@@ -23,5 +23,10 @@ blog:
 static:
 	rsync -azvh --delete static/ perfect-blue:/var/www/html/static
 
+.PHONY: dizbiz
+dizbiz:
+	rsync -azvh --delete dizzy.biz/ perfect-blue:/var/www/html/dizzy.biz
+
+
 .PHONY: all
 all: goritski jakeg blog
