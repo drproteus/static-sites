@@ -38,11 +38,6 @@ sdf:
 	rsync -azvh --delete sdf/ $(SDF_HOST):~/html
 
 .PHONY: caddy
-caddy: push-caddy
-	scp caddy/Caddyfile perfect-blue:/etc/caddy/Caddyfile
+caddy:
+	scp caddy/static-sites.caddy perfect-blue:/etc/caddy/static-sites.caddy
 	ssh -t $(HOST) 'cd /etc/caddy; sudo caddy reload'
-
-.PHONY: pull-caddy
-pull-caddy:
-	scp $(HOST):/etc/caddy/Caddyfile caddy/Caddyfile
-

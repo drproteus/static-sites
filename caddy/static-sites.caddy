@@ -1,0 +1,42 @@
+jake.gorit.ski {
+	file_server * {
+		root /var/www/html/jake.gorit.ski
+	}
+}
+
+gorit.ski {
+	file_server * {
+		root /var/www/html/gorit.ski
+	}
+}
+
+www.gorit.ski {
+	redir https://gorit.ski{uri}
+}
+
+jakeg.dev {
+	file_server * {
+		hide .git bb.sh drafts/*
+		root /var/www/html/jakeg.dev
+	}
+}
+
+static.skinet.org {
+	file_server * {
+		root /var/www/html/static
+	}
+}
+
+dizzy.biz {
+	file_server * {
+		root /var/www/html/dizzy.biz
+	}
+}
+
+yt.gorit.ski {
+	redir https://youtube.com/@earthmanlabs
+}
+
+bohemianrobotics.com {
+	redir https://jake.gorit.ski
+}
