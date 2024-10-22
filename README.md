@@ -16,6 +16,9 @@ make jakeg
 * https://gorit.ski
 * https://jake.gorit.ski
 * https://jakeg.dev
-* https://static.skinet.org/diz
+* https://dizzy.biz
+* https://jakeg.sdf.org
+* https://static.skinet.org
+
 
 ![foobar](/static/images/dizposter.jpg)
