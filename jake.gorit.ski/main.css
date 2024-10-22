@@ -1,0 +1,45 @@
+html {
+    font-family: monospace;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+a:visited {
+    color: inherit;
+    text-decoration: inherit;
+}
+@media (prefers-color-scheme: dark) {
+	html {
+		background: black;
+		color: white;
+	}
+	a:hover,a:focus {
+		background: white;
+		color: black;
+	}
+}
+@media (prefers-color-scheme: light) {
+	html {
+		background: white;
+		color: black;
+	}
+	a:hover,a:focus {
+		background: black;
+		color: white;
+	}
+}
+ul {
+	list-style: none;
+}
+.vert {
+	writing-mode: tb-rl;
+	float: left;
+}
+.banner {
+	padding-right: 10px;
+}
+.card {
+	margin-top: 50px;
+	font-size: 2em;
+}
