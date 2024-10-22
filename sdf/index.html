@@ -1,0 +1,217 @@
+<html>
+    <head>
+        <a rel="me" href="https://mastodon.sdf.org/@jakeg" style="display: none"
+            >Mastodon</a
+        >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="https://unpkg.com/98.css" />
+        <style>
+            html {
+                padding: 0;
+                border: 0;
+                margin: 0;
+            }
+
+            body {
+                background: #2f847c;
+                padding: 0;
+                border: 0;
+                margin: 0;
+            }
+
+            .container {
+                column-count: 2;
+                margin: auto;
+                padding: 20px;
+                width: 1200px;
+            }
+
+            .two-panel {
+                column-count: 2;
+            }
+            .two-panel ul {
+                break-inside: avoid;
+            }
+
+            .window {
+                margin-bottom: 10px;
+                break-inside: avoid;
+            }
+
+            .row > * {
+                flex: 1;
+            }
+
+            .column {
+                display: flex;
+                align-items: center;
+                align-content: space-around;
+            }
+
+            #diz {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                cursor: pointer;
+            }
+
+            .window {
+                width: 580px;
+                flex-shrink: 0;
+            }
+
+            #bruce-banner {
+                text-align: center;
+            }
+
+            #bruce-banner img {
+                width: 400px;
+            }
+
+            .panel {
+                display: block;
+                margin: 5px auto;
+                width: 100%;
+            }
+
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="window">
+                <div class="title-bar">
+                    <div class="title-bar-text">welcome</div>
+                    <div class="title-bar-controls"></div>
+                </div>
+                <div class="window-body" id="bruce-banner">
+                    <a href="https://jake.gorit.ski"
+                        ><img
+                            src="https://static.skinet.org/images/everythingsjake.png"
+                    /></a>
+                </div>
+            </div>
+            <div class="window" id="the-window">
+                <div class="title-bar">
+                    <div class="title-bar-text">jakeg@sdf</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <p>Garbage in, garbage out, kimosabe.</p>
+                    <section
+                        class="field-row"
+                        style="justify-content: flex-end"
+                    >
+                        <button
+                            onclick="window.location.href='https://mastodon.sdf.org/@jakeg';"
+                        >
+                            Mastodon
+                        </button>
+                        <button
+                            onclick="window.location.href='https://jakeg.dev';"
+                        >
+                            Blog
+                        </button>
+                        <button
+                            onclick="window.location.href='https://github.com/drproteus';"
+                        >
+                            GitHub
+                        </button>
+                        <button
+                            onclick="window.location.href='https://linktr.ee/drproteus'"
+                        >
+                            Links
+                        </button>
+                    </section>
+                </div>
+            </div>
+
+            <div class="window">
+                <div class="title-bar">
+                    <div class="title-bar-text">game of life</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <iframe
+                        name="gol-iframe"
+                        src="https://static.skinet.org/cellular-automata/"
+                        width="100%"
+                        height="400"
+                        frameborder="0"
+                        allowtransparency="true"
+                        allow="encrypted-media"
+                    ></iframe>
+                </div>
+            </div>
+
+            <div class="window">
+                <div class="title-bar">
+                    <div class="title-bar-text">excelsior</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <div class="two-panel">
+                        <ul class="tree-view">
+                            <li>
+                                <img
+                                    src="https://static.skinet.org/images/surfer1.jpg"
+                                    class="panel"
+                                />
+                            </li>
+                        </ul>
+                        <br />
+                        <ul class="tree-view">
+                            <li>
+                                <img
+                                    src="https://static.skinet.org/images/surfer2.jpg"
+                                    class="panel"
+                                />
+                            </li>
+                        </ul>
+                        <ul class="tree-view">
+                            <li>
+                                <img
+                                    src="https://static.skinet.org/images/surfer3.jpg"
+                                    class="panel"
+                                />
+                            </li>
+                        </ul>
+                    </div>
+                    <br />
+                    <section
+                        class="field-row"
+                        style="justify-content: flex-end"
+                    >
+                        <button>Hustle</button>
+                        <button>Flow</button>
+                        <button>Escape the Surly Bonds of Earth</button>
+                    </section>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div id="diz">
+            <img
+                src="https://static.skinet.org/images/dizbanner.png"
+                onclick="window.location.href='https://dizzy.biz'"
+            />
+        </div>
+    </body>
+</html>
