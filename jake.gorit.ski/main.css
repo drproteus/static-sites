@@ -31,6 +31,8 @@ a:visited {
 @media (prefers-color-scheme: dark) {
     html {
         background: black;
+        background: url("./assets/images/215.jpg");
+        background-position: center;
         color: white;
     }
     a:hover,
@@ -42,11 +44,16 @@ a:visited {
         background: rgba(0, 0, 0, 0.8);
         border: 1px dotted white;
     }
+    #profile {
+        border: 1px dotted white;
+    }
 }
 
 @media (prefers-color-scheme: light) {
     html {
         background: white;
+        background: url("./assets/images/215.jpg");
+        background-position: center;
         color: black;
     }
     a:hover,
@@ -55,7 +62,11 @@ a:visited {
         color: white;
     }
     .card {
-        background: rgba(255, 255, 255, 0.8);
+        /* background: rgba(255, 255, 255, 0.8); */
+        background: white;
+        border: 1px dotted black;
+    }
+    #profile {
         border: 1px dotted black;
     }
 }
@@ -110,7 +121,6 @@ ul {
     overflow: hidden;
     width: 120px;
     height: auto;
-    border: 1px dotted white;
 }
 
 #c {
