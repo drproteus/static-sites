@@ -22,7 +22,7 @@ jakeg.dev {
 }
 
 static.skinet.org {
-	file_server * {
+	file_server * browse {
 		root /var/www/html/static
 	}
 }
