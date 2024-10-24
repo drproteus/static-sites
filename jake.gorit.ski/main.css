@@ -74,7 +74,9 @@ ul {
 }
 
 .banner {
-    padding-right: 10px;
+    /* padding-right: 10px; */
+    position: absolute;
+    right: 40px;
 }
 
 .card h3 {
@@ -99,6 +101,7 @@ ul {
 }
 
 #sideb {
+    padding-top: 24px;
     clear: both;
 }
 
