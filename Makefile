@@ -11,7 +11,7 @@ usage:
 	@echo "* static -> static.skinet.org"
 	@echo "* dizbiz -> dizzy.biz"
 	@echo "* sdf -> jakeg.sdf.org"
-	
+
 .PHONY: goritski
 goritski:
 	rsync -azvh --delete gorit.ski/ $(HOST):$(WEB_ROOT)/gorit.ski
@@ -39,5 +39,5 @@ sdf:
 
 .PHONY: caddy
 caddy:
-	scp caddy/static-sites.caddy perfect-blue:/etc/caddy/static-sites.caddy
+	scp caddy/static-sites.caddy $(HOST):/etc/caddy/static-sites.caddy
 	ssh -t $(HOST) 'cd /etc/caddy; sudo caddy reload'
