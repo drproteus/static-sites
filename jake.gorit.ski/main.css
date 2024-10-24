@@ -3,8 +3,13 @@
     src: url("./assets/fonts/AnonymousPro-Regular.ttf");
 }
 
+@font-face {
+    font-family: "DOS";
+    src: url("./assets/fonts/Px437_DOS-V_re_ANK24.ttf");
+}
+
 html {
-    font-family: "Anonymous Pro", monospace;
+    font-family: "DOS", "Anonymous Pro", monospace;
     padding: 0;
     margin: 0;
 }
@@ -17,10 +22,12 @@ a {
     color: inherit;
     text-decoration: inherit;
 }
+
 a:visited {
     color: inherit;
     text-decoration: inherit;
 }
+
 @media (prefers-color-scheme: dark) {
     html {
         background: black;
@@ -33,9 +40,10 @@ a:visited {
     }
     .card {
         background: rgba(0, 0, 0, 0.8);
-        border: 1px solid white;
+        border: 1px dotted white;
     }
 }
+
 @media (prefers-color-scheme: light) {
     html {
         background: white;
@@ -48,37 +56,58 @@ a:visited {
     }
     .card {
         background: rgba(255, 255, 255, 0.8);
-        border: 1px solid black;
+        border: 1px dotted black;
     }
 }
+
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 .vert {
     writing-mode: tb-rl;
     float: left;
     margin: 0;
     margin-left: 78px;
 }
+
 .banner {
     padding-right: 10px;
 }
+
 .card h3 {
     margin-top: 0;
+    margin-bottom: 0;
 }
+
+#sidea h5 {
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 100;
+}
+
 .card {
     margin: auto;
     font-size: 2em;
     width: 380px;
     padding: 40px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     box-sizing: border-box;
     position: relative;
 }
+
 #sideb {
     clear: both;
+}
+
+#profile {
+    float: left;
+    overflow: hidden;
+    width: 120px;
+    height: auto;
+    border: 1px dotted white;
 }
 
 #c {
@@ -94,5 +123,14 @@ ul {
     position: absolute;
     bottom: 40px;
     right: 40px;
-    border-radius: 5px;
+    border-radius: 0px;
+}
+
+#cat {
+    image-rendering: pixelated;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    right: 40px;
+    bottom: 124px;
 }
