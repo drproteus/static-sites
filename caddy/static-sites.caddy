@@ -40,3 +40,7 @@ yt.gorit.ski {
 bohemianrobotics.com {
 	redir https://jake.gorit.ski
 }
+
+quarterlycornchip.com {
+    respond "It's crunchtime!"
+}
