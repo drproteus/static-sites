@@ -9,6 +9,7 @@ const quotes = [
   "How strange it is to be anything at all.",
   "All you've got are your actions, man.",
   "Did they get you to trade your heroes for ghosts?",
+  "Your belief system ain't louder than my sound system.",
 ];
 
 function updateQuote(i) {
