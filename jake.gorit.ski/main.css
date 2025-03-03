@@ -99,6 +99,11 @@ ul {
     font-style: italic;
     font-size: 14px;
     font-weight: 100;
+    line-height: 1em;
+    min-height: 2em;
+    user-select: none;
+    -moz-user-select: none;
+    cursor: pointer;
 }
 
 .card {
