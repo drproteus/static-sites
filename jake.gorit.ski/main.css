@@ -150,7 +150,8 @@ ul {
     width: 64px;
     height: 64px;
     right: 40px;
-    bottom: 124px;
+    /* bottom: 124px; */
+    bottom: 40px;
 }
 
 .fadein {
