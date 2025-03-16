@@ -3,41 +3,63 @@
 
 <head>
   <meta charset="utf-8">
-  <title>wEOw</title>
+  <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+  <title>Dizzy's Bazaar</title>
   <style>
-    body {
-      background-image: url("https://static.skinet.org/images/Clouds.bmp");
-      background-size: cover;
-      text-align: center;
-      padding: 50px;
-    }
-    #dizbiz {
-      box-shadow: 7px 7px rgba(0, 0, 0, 0.2);
-      border-radius: 20px;
-    }
-    #wordart {
-      height: 200px;
-      display: block;
-      margin: auto;
-      margin-bottom: 50px;
-    }
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      width: fit-content;
-      margin: auto;
-    }
-    li {
-      float: left;
-      margin: 20px;
-    }
+  body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: black;
+    color: #eee;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  #sixtyfour {
+    width: 600px;
+    margin: 50px auto;
+    position: relative;
+  }
+  #dizbiz {
+    text-align: center;
+    width: 100%;
+  }
+  @font-face {
+    font-family: Chiaro;
+    src: url(/fonts/chiarostd_b.otf);
+  }
+  #dialog {
+    margin: 20px;
+    padding: 20px;
+    width: 520px;
+    min-height: 100px;
+    border-radius: 10px;
+    background-color: #1a1e28;
+    color: #eee;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    font-size: 2em;
+    line-height: 1.2em;
+    font-family: Chiaro;
+  }
   </style>
 </head>
 
 <body>
-    <img id="wordart" src="https://static.skinet.org/images/dizzy-wordart.png"/>
-    <img id="dizbiz" src="/images/dbounce.gif"/>
+  <div id="sixtyfour">
+    <div id="dialog">
+      <p>Meowdy, pal. My name's Dizzy, and boy do I have a quest for you!<a href="https://www.youtube.com/watch?v=K_YkXPs9vdM">🟦</a></p>
+    </div>
+    <img id="dizbiz" src="/images/dizzy64.jpg"/>
+    <!--
     <ul>
       <li>
         <a href="https://www.youtube.com/watch?v=K_YkXPs9vdM">videos</a>
@@ -49,5 +71,7 @@
         <a href="https://gorit.ski">fanclub</a>
       </li>
     </ul>
+    -->
+  </div>
 </body>
 </html>
