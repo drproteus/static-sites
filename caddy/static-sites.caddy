@@ -15,10 +15,7 @@ www.gorit.ski {
 }
 
 jakeg.dev {
-	file_server * {
-		hide .git bb.sh drafts/*
-		root /var/www/html/jakeg.dev
-	}
+	respond "under construction"
 }
 
 static.skinet.org {

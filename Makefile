@@ -7,7 +7,7 @@ usage:
 	@echo "Run make <site> to upload to remote host."
 	@echo "* goritski -> gorit.ski"
 	@echo "* jakeg -> jake.gorit.ski"
-	@echo "* blog -> jakeg.dev"
+	# @echo "* blog -> jakeg.dev"
 	@echo "* static -> static.skinet.org"
 	@echo "* dizbiz -> dizzy.biz"
 	@echo "* sdf -> jakeg.sdf.org"
@@ -20,10 +20,10 @@ goritski:
 jakeg:
 	rsync -azvh --delete jake.gorit.ski/ $(HOST):$(WEB_ROOT)/jake.gorit.ski
 
-.PHONY: blog
-blog:
-	cd jakeg.dev && make dist
-	rsync -azvh --delete jakeg.dev/dist/ $(HOST):$(WEB_ROOT)/jakeg.dev
+# .PHONY: blog
+# blog:
+# 	cd jakeg.dev && make dist
+# 	rsync -azvh --delete jakeg.dev/dist/ $(HOST):$(WEB_ROOT)/jakeg.dev
 
 .PHONY: static
 static:
